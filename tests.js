@@ -113,7 +113,7 @@ entities.forEach(function(entity) {
 				expect(function() { entity.addToGroup(firstEntity, group) }).toThrowError(Error);
 
 				deleteGroup(group);
-				expect(function() { addRightToGroup(secondEntity, group) }).toThrowError(Error);
+				expect(function() { entity.addToGroup(secondEntity, group) }).toThrowError(Error);
 			});
 		});
 	};
